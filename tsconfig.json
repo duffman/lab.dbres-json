@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "lib": ["es6", "dom" ],
+    "types": ["node", "reflect-metadata", "inversify"],
+    "module": "commonjs",
+    "target": "ESNEXT",
+    "noImplicitAny": false,
+    "sourceMap": false,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "outDir": "./dist",
+    "baseUrl": "./",
+    "paths": {
+      "@root/*": ["./*"],
+      "@app/*": ["./app/*"],
+      "@utils/*": ["./app/utils/*"],
+      "@dbcore/*": ["./app/lib/dbcore/*"]
+    }
+},
+  "exclude": [
+    "node_modules"
+  ]
+}
